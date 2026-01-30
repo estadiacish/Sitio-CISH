@@ -34,7 +34,7 @@
     --transition-slow: 0.5s ease;
 }
 
-/* === RESET & BASE === */
+/* ============================================= diseños base =================================================== */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -167,7 +167,7 @@ ul {
 
 #button {
     align-self: center;
-    background: linear-gradient(135deg, #fbc02d, #f9a825); /* Degradado similar a tu botón de contacto */
+    background: linear-gradient(135deg, #fbc02d, #f9a825); 
     color: white;
     padding: 15px 40px;
     border: none;
@@ -198,7 +198,7 @@ ul {
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     display: flex;
     align-items: center;
-    transform: translateX(150%); /* Escondido por defecto */
+    transform: translateX(150%);
     transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 1000;
 }
@@ -208,11 +208,11 @@ ul {
 }
 
 .notification.success {
-    border-left: 5px solid #d4af37; /* Tu dorado */
+    border-left: 5px solid #d4af37; 
 }
 
 .notification.error {
-    border-left: 5px solid #ff4d4d; /* Rojo para error */
+    border-left: 5px solid #ff4d4d; 
 }
 
 .notification-content {
@@ -227,12 +227,10 @@ ul {
     margin: 0;
 }
 
-/* Pone un borde rojo si el campo es inválido después de que el usuario interactuó */
 input:invalid:not(:placeholder-shown) {
     border-color: #ff4d4d;
 }
 
-/* Pone un borde dorado si el campo cumple con la regla */
 input:valid:not(:placeholder-shown) {
     border-color: #d4af37;
 }
@@ -340,7 +338,6 @@ input:valid:not(:placeholder-shown) {
 
 /**============================================== Imagenes ====================================================== */
 
-/* === CONTROLES VOLUMÉTRICOS === */
 .volumetricos {
     padding: 100px 0;
     background: var(--color-white);
@@ -414,7 +411,6 @@ input:valid:not(:placeholder-shown) {
     line-height: 1.6;
 }
 
-/* Card ancha (evaluador) */
 .vol-card-wide {
     grid-column: span 3;
     flex-direction: row;
@@ -460,7 +456,7 @@ input:valid:not(:placeholder-shown) {
 }
 
 
-/* ================================================== HERO ====================================================== */
+/* ================= SECCIÓN PRINCIPAL ====================================================== */
 .hero {
     position: relative;
     min-height: 100vh;
@@ -612,7 +608,7 @@ input:valid:not(:placeholder-shown) {
     animation: scrollDown 1.5s infinite;
 }
 
-/* ============================================== ABOUT ============================================= */
+/* =============================== ACERCA DE ============================================= */
 .about {
     padding: 100px 0;
     background: var(--color-light);
@@ -668,7 +664,7 @@ input:valid:not(:placeholder-shown) {
     line-height: 1.7;
 }
 
-/* ============================================== SERVICES ============================== */
+/* ============================================== SERVICIOS ============================== */
 .services {
     padding: 100px 0;
     background: var(--color-white);
@@ -757,7 +753,7 @@ input:valid:not(:placeholder-shown) {
 .proceso-verificacion {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Un gris muy ligero para diferenciar la sección */
+    background-color: #f9f9f9; 
 }
 
 .titulo-seccion {
@@ -770,7 +766,7 @@ input:valid:not(:placeholder-shown) {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Para que sea responsivo en móviles */
+    flex-wrap: wrap; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -785,7 +781,6 @@ input:valid:not(:placeholder-shown) {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Efecto de agrandar la tarjeta completa */
 .proceso-card:hover {
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
@@ -796,7 +791,7 @@ input:valid:not(:placeholder-shown) {
     width: 100%;
     height: 85%;
     object-fit: cover;
-    overflow: hidden; /* Importante para que la imagen no se salga al crecer */
+    overflow: hidden; 
 }
 
 .image-wrapper img {
@@ -806,10 +801,6 @@ input:valid:not(:placeholder-shown) {
     transition: transform 0.5s ease;
 }
 
-
-
-
-
 .card-content {
     padding: 25px;
     text-align: left;
@@ -817,7 +808,7 @@ input:valid:not(:placeholder-shown) {
 }
 
 .etapa-numero {
-    font-family: 'Serif', Georgia, serif; /* Estilo similar a tu captura */
+    font-family: 'Serif', Georgia, serif; 
     font-size: 2.5rem;
     font-weight: bold;
     color: #e0e0e0;
@@ -838,7 +829,7 @@ input:valid:not(:placeholder-shown) {
     line-height: 1.5;
 }
 
-/* === LIGHTBOX === */
+/* ======================================= LIGHTBOX ===================================================== */
 .lightbox {
     position: fixed;
     inset: 0;
@@ -1104,7 +1095,7 @@ input:valid:not(:placeholder-shown) {
 }
 
 
-/*============================================== CONTACTO ===================================================== */
+/*================= CONTACTO =========================== */
 .contact {
     padding: 100px 0;
     background: var(--color-light);
@@ -1244,7 +1235,7 @@ input:valid:not(:placeholder-shown) {
     background-size: 18px;
 }
 
-/* ========================================== FOOTER ======================================================== */
+/* ===================== FOOTER =========================== */
 .footer {
     background: var(--color-black);
     padding: 80px 0 30px;
@@ -1519,9 +1510,7 @@ input:valid:not(:placeholder-shown) {
     }
 }
 
-/*====================================================== WHATSAPP ==========================================*/
-
-/* === BOTÓN FLOTANTE WHATSAPP === */
+/*================ WHATSAPP =============*/
 .whatsapp-float {
     position: fixed;
     bottom: 28px;
@@ -1633,32 +1622,31 @@ input:valid:not(:placeholder-shown) {
 
 .cardf {
   width: fit-content;
-  min-width: 250px; /* Asegura un ancho mínimo agradable */
+  min-width: 250px; 
   background-color: var(--color-gray-900);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* CLAVE PARA RESPONSIVIDAD: permite que bajen de fila en móvil */
+  flex-wrap: wrap; 
   padding: 30px;
-  gap: 25px; /* Aumenté un poco el gap para que el "scale" no choque */
+  gap: 25px; 
   border-radius: 20px;
   margin: 0 auto;
 }
 
 .socialContainer {
-  width: 40px; /* Un poco más grandes para mejor click en móviles */
+  width: 40px; 
   height: 40px;
-  background-color: #2e2e2e; /* Color base ligeramente distinto al fondo */
+  background-color: #2e2e2e; 
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; /* Empezamos con círculo para un look más moderno */
+  border-radius: 50%; 
   overflow: hidden;
   transition-duration: 0.3s;
   text-decoration: none;
 }
 
-/* Efectos Hover (Tus estilos originales mejorados) */
 .containerOne:hover { background-color: #d62976; transform: scale(1.3); border-radius: 12px; }
 .containerTwo:hover { background-color: #000000; transform: scale(1.3); border-radius: 12px; }
 .containerThree:hover { background-color: #0072b1; transform: scale(1.3); border-radius: 12px; }
@@ -1674,7 +1662,6 @@ input:valid:not(:placeholder-shown) {
   fill: white;
 }
 
-/* Animación al entrar */
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
 }
@@ -1684,7 +1671,6 @@ input:valid:not(:placeholder-shown) {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-/* Ajuste específico para móviles muy pequeños */
 @media (max-width: 400px) {
   .cardf {
     gap: 15px;
