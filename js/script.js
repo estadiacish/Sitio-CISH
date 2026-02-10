@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('whatsappBtn');
     const tooltip = document.getElementById('whatsappTooltip');
 
-    const phone = '524611975787';
+    const phone = '524494147681';
 
     const sections = [
         {
